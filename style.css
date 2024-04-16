@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+}
+
+.content {
+    display: flex;
+    margin: 50px auto;
+    width: 1100px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+#content-image {
+    background-image: url(img/churrascometro.jpg);
+    background-size: cover;
+
+}
+
+#content-image,
+#content-data {
+    width: 50%;
+    height: 550px;
+    border: none;
+}
+
+#content-data {
+    background-color: rgb(35, 35, 35);
+    border-radius: 0 10px 10px 0;
+}
+
+#form-data {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.form-field {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-field input {
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+}
+
+.form-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-field label {
+    color: #fff;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-field input[type="number"] {
+    width: 60px;
+}
+
+.form-field input[type="checkbox"] {
+    width: 20px;
+}
+
+.btn {
+    padding: 5px;
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    background-color: #26282b;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#form-total {
+    display: none;
+    width: 350px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#form-total .form-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#form-results {
+    display: none;
+    width: 80%;
+    margin: 70px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+table tr td {
+    padding: 5px;
+    border: 1px solid #555;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: #4f4f4f;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 95vw;
+    height: 30px;
+    color: #4f4f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -75px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        background-color: rgb(35, 35, 35);
+        flex-direction: column;
+        width: 95%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #content-image {
+        width: 90vw;
+        height: 40vh;
+        background-image: url(img/churrascometro-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+
+    #content-data {
+        width: 100%;
+    }
+
+    #form-data,
+    #form-total,
+    #form-results {
+        margin: 5px 2px;
+    }
+
+    .form-field {
+        margin: 10px 0;
+    }
+
+    #btn-data {
+        margin: 0;
+    }
+
+    footer p {
+        position: fixed;
+        bottom: 0;
+        font-size: 13px;
+        width: 80vw;
+        color: #8a8a8a;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    footer a {
+        color: #8a8a8a;
+    }
+}

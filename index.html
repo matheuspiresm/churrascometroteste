@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Churrascômetro</title>
+</head>
+<body>
+    <main class="content">
+        <div id="content-image">
+            <!-- <img src="img/churrascometro.jpg" alt="imagem churrascometro"> -->
+        </div>
+        <div id="content-data">
+            <div id="form-data">
+                <h2>Informações pessoais</h2>
+                <div class="form-field">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Digite seu Nome" required>
+                </div>
+                <div class="form-field">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Digite seu Email" required>
+                </div>
+                <div class="form-field">
+                    <label for="cep"></label>
+                    <input type="text" id="cep" placeholder="Digite seu CEP">
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" id="promo" checked />
+                    <label for="promo">Aceito receber e-mails com promoções</label>
+                </div>
+                <div class="form-button">
+                    <button id="btn-data">Próximo</button>
+                </div>
+            </div>
+
+        <div id="form-total">
+            <h2>Quantidade de pessoas</h2>
+
+            <div class="form-field">
+                <label for="men">Homens:</label>
+                <input type="number" id="men" min="0" value="0">
+            </div>
+
+            <div class="form-field">
+                <label for="women">Mulheres:</label>
+                <input type="number" id="women" min="0" value="0">
+            </div>
+
+            <div class="form-field">
+                <label for="children">Crianças:</label>
+                <input type="number" id="children" min="0" value="0">
+            </div>
+
+            <div class="form-field">
+                <label for="drinkers">Pessoas que bebem:</label>
+                <input type="number" id="drinkers" min="0" value="0">
+            </div>
+
+            <div class="form-button">
+                <button id="btn-total">Calcular</button>
+            </div>
+        </div>
+
+        <div id="form-results">
+            <h2>Resultado</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="results-tbody"></tbody>
+            </table>
+            <button id="results-btn">Voltar Início</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados | Desenvolvido por 
+            <a href="https://www.linkedin.com/in/matheuslpires/" target="_blank">Matheus Pires</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
